@@ -1,0 +1,18 @@
+
+.nav{
+text-align: center;
+font-size: 20px;
+padding: 2%;
+background-color: rgb(240, 240, 240);
+
+}
+
+img{
+    max-width: 200px;
+    min-height: auto;
+    
+}
+
+footer{
+    text-align:end;
+}
