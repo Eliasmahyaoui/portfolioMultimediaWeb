@@ -1,14 +1,15 @@
 .boton {
-  background-color: $color-principal;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
   cursor: pointer;
-  @include transicion;
+  border: none;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, $color-principal, $color-acento);
+  color: white;
+  @include transicion(all);
 
   &:hover {
-    opacity: 0.8;
+    transform: translateY(-3px) scale(1.05);
+    opacity: 0.9;
   }
 }
-

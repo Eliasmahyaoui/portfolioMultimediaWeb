@@ -2,18 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Curriculum Web Elias Mahyaoui</title>
+  <title>Curriculum - Nombre Apellido</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
 <header>
-  <h1>Nombre Apellido</h1>
-  <h2>Desarrollador Web</h2>
+  <h1>Elias Mahyaoui</h1>
+  <h2>Desarrollador Web Junior</h2>
   <a href="#" class="boton">Contactar</a>
   <a href="CV.pdf" class="boton">Descargar CV</a>
 
-  
   <nav>
     <a href="#sobre-mi">Sobre mí</a>
     <a href="#proyectos">Proyectos</a>
@@ -21,28 +21,47 @@
   </nav>
 </header>
 
-<section id="sobre-mi">
-  <h3>Sobre mí</h3>
-  <p>Pequeña descripción personal...</p>
-  <img src="img/perfil.jpg" alt="Foto de perfil">
+<!-- Sección Sobre mí -->
+<section id="sobre-mi" class="container perfil">
+  <div class="card perfil-card">
+    <div class="perfil-img">
+      <img src="img/perfil.jpeg" alt="Foto de perfil">
+    </div>
+    <div class="perfil-info">
+      <h3>Sobre mí</h3>
+      <p>Soy un desarrollador web apasionado por crear experiencias digitales intuitivas y funcionales. Me especializo en HTML, CSS, JavaScript y frameworks modernos, con experiencia en diseño responsive y optimización de interfaces.</p>
+    </div>
+  </div>
 </section>
 
-<section id="proyectos">
-  <h3>Proyectos</h3>
-  <div class="card">
-    <img src="img/proyecto1.jpg" alt="Proyecto 1">
+<!-- Sección Proyectos -->
+<section id="proyectos" class="container proyectos">
+  <div class="card proyecto-card">
+    <div class="proyecto-img">
+      <img src="img/Kings Leagues 122623 (1).jpg.webp" alt="Kings League 1K">
+      <div class="proyecto-overlay">
+        <h3>Kings League</h3>
+        <p>Web interactiva con noticias, resultados y perfiles de jugadores.</p>
+      </div>
+    </div>
   </div>
-  <div class="card">
+
+  <div class="card proyecto-card">
     <video controls src="videos/presentacion.mp4"></video>
   </div>
-  <div class="card">
+
+  <div class="card proyecto-card audio">
     <audio controls src="audio/top5lenguajes.mp3"></audio>
   </div>
 </section>
 
-<section id="contacto">
-  <h3>Contacto</h3>
-  <p>Email: ejemplo@mail.com</p>
+<!-- Sección Contacto -->
+<section id="contacto" class="container">
+  <div class="card">
+    <h3>Contacto</h3>
+    <p>Email: ejemplo@mail.com</p>
+    <p>Teléfono: +34 600 000 000</p>
+  </div>
 </section>
 
 <footer>

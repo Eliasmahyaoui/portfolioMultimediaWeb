@@ -1,23 +1,46 @@
 header {
-  background-color: $color-principal;
+  background: linear-gradient(135deg, $color-principal, $color-acento);
   color: white;
-  padding: 50px 20px;
   text-align: center;
-  animation: entradaHeader 1s ease forwards;
+  padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
 
-  nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    animation: fadeInDown 1s ease forwards;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  .boton {
+    background: linear-gradient(90deg, $color-principal, $color-acento);
+    padding: 12px 30px;
+    margin: 5px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    @include transicion(transform);
 
     &:hover {
-      text-decoration: underline;
-      @include transicion;
+      transform: translateY(-5px) scale(1.05);
+      opacity: 0.9;
     }
   }
 }
 
-@keyframes entradaHeader {
-  from { opacity: 0; transform: translateY(-20px); }
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
   to { opacity: 1; transform: translateY(0); }
 }
