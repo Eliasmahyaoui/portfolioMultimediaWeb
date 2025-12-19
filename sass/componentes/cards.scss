@@ -1,0 +1,12 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  @include transicion;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

@@ -1,5 +1,13 @@
-@import 'basico/base';
 @import 'basico/variables';
+@import 'basico/mixins';
+@import 'basico/base';
 
 @import 'layouts/header';
-@import 'componentes/buttons';
+@import 'layouts/navbar';
+@import 'layouts/footer';
+
+
+@import 'componentes/botones';
+@import 'componentes/cards';
+@import 'componentes/multimedia';
+

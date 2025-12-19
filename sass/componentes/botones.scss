@@ -1,0 +1,14 @@
+.boton {
+  background-color: $color-principal;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  @include transicion;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+

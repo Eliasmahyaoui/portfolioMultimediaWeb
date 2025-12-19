@@ -1,0 +1,23 @@
+header {
+  background-color: $color-principal;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  animation: entradaHeader 1s ease forwards;
+
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      @include transicion;
+    }
+  }
+}
+
+@keyframes entradaHeader {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
