@@ -1,2 +1,5 @@
-@import 'variables';
-@import 'base';
+@import 'basico/base';
+@import 'basico/variables';
+
+@import 'layouts/header';
+@import 'componentes/buttons';
